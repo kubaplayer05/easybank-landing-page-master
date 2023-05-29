@@ -1,0 +1,12 @@
+{
+  "name": "easybank-landing-page-master",
+  "version": "1.0.0",
+  "description": "Project from frontendmentor.io",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass --watch ./src/scss/main.scss ./src/css/main.css"
+  },
+  "author": "kubaplayer05",
+  "license": "ISC"
+}
