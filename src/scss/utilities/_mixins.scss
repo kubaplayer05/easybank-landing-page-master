@@ -1,0 +1,11 @@
+@mixin flexbox($direction: row, $align: center, $justify: center, $gap: 0) {
+   display: flex;
+   flex-direction: $direction;
+   justify-content: $justify;
+   align-items: $align;
+   gap: $gap;
+}
+
+@mixin background-gradient() {
+   background: linear-gradient(90deg, hsl(136, 65%, 51%) 0%, hsl(192, 70%, 51%) 100%);
+}

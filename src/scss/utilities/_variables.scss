@@ -1,3 +1,5 @@
+/* Colors */
+
 $dark-blue: hsl(233, 26%, 24%);
 $lime-green: hsl(136, 65%, 51%);
 $bright-cyan: hsl(192, 70%, 51%);
@@ -9,7 +11,23 @@ $white: hsl(0, 0%, 100%);
 
 $primary-bg: $white;
 $primary-font: $dark-blue;
+$light-font-color: $grayish-blue;
 $primary-green: $lime-green;
 $primary-blue: $bright-cyan;
 
+/* Breakpoints */
 
+$small: 576px;
+$medium: 768px;
+$large: 992px;
+$extra-large: 1200px;
+
+/* border */
+
+$radius: 30px;
+
+/* font weights */
+
+$light: 300;
+$normal: 400;
+$bold: 700;

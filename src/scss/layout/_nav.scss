@@ -1,0 +1,16 @@
+@use "../utilities" as utils;
+
+.nav {
+
+   ul {
+      @include utils.flexbox($gap: 30px);
+      list-style: none;
+   }
+
+   &__element {
+      color: utils.$light-font-color;
+      text-decoration: none;
+      padding: 0 5px;
+   }
+
+}

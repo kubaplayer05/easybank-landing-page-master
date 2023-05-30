@@ -1,0 +1,9 @@
+@use "../utilities" as utils;
+
+.navbar {
+   @include utils.flexbox($justify: space-between);
+
+   width: clamp(400px, 85%, 1600px);
+   margin: 0 auto;
+   padding: 25px 0;
+}

@@ -27,10 +27,69 @@ select {
   font: inherit;
 }
 
-/* font weights */
 html {
   font-family: "Public Sans", sans-serif;
   font-size: 18px;
+}
+
+/* Colors */
+/* Breakpoints */
+/* border */
+/* font weights */
+.button {
+  align-self: center;
+  border: none;
+  border-radius: 30px;
+  color: hsl(0, 0%, 100%);
+  padding: 15px 35px;
+  font-weight: 700;
+  background: linear-gradient(90deg, hsl(136, 65%, 51%) 0%, hsl(192, 70%, 51%) 100%);
+}
+.button:hover {
+  cursor: pointer;
+}
+@media (width <= 768px) {
+  .button--desktop {
+    display: none;
+  }
+}
+@media (width > 768px) {
+  .button--mobile {
+    display: none;
+  }
+}
+
+.logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0;
+  width: clamp(400px, 85%, 1600px);
+  margin: 0 auto;
+  padding: 25px 0;
+}
+
+.nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  list-style: none;
+}
+.nav__element {
+  color: hsl(233, 8%, 62%);
+  text-decoration: none;
+  padding: 0 5px;
 }
 
 /*# sourceMappingURL=main.css.map */

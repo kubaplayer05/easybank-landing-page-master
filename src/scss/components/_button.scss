@@ -1,0 +1,28 @@
+@use "../utilities" as utils;
+
+.button {
+   align-self: center;
+   border: none;
+   border-radius: utils.$radius;
+   color: utils.$white;
+   padding: 15px 35px;
+   font-weight: utils.$bold;
+
+   &:hover {
+      cursor: pointer;
+   }
+
+   @include utils.background-gradient;
+
+   @media (width <= utils.$medium) {
+      &--desktop {
+         display: none;
+      }
+   }
+
+   @media (width > utils.$medium) {
+      &--mobile {
+         display: none;
+      }
+   }
+}
