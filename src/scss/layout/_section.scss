@@ -2,8 +2,9 @@
 
 .section {
 
+   background-color: utils.$light-bg;
+
    &--hero {
-      background-color: utils.$light-bg;
       @include utils.flexbox();
 
       & > div {
@@ -11,6 +12,21 @@
       }
 
    }
+
+   &--dark {
+      background-color: utils.$dark-bg;
+   }
+
+   &__title {
+      font-weight: utils.$normal;
+      font-size: 35px;
+   }
+
+   &__desc {
+      color: utils.$light-font-color;
+      max-width: 600px;
+   }
+
 
    &__content {
 
@@ -27,6 +43,11 @@
       }
 
       &__container {
+         @include utils.flexbox($direction: column, $align: flex-start, $gap: 20px);
+         padding: clamp(20px, 7.5%, 300px) clamp(20px, 10%, 300px);
+      }
+
+      &__container--hero {
          @include utils.flexbox();
          translate: 0 -40%;
          padding: 0 100px;

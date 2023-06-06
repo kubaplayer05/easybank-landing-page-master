@@ -1,0 +1,28 @@
+@use "../utilities" as utils;
+
+.article {
+   
+   &__content {
+      background-color: #fff;
+      padding: 25px;
+      @include utils.flexbox($direction: column, $gap: 15px, $justify: flex-start, $align: flex-start)
+   }
+
+   &__img {
+      height: 250px;
+   }
+
+   &__author {
+      color: utils.$light-font-color;
+      font-size: 14px;
+   }
+
+   &__title {
+      font-weight: utils.$normal;
+      font-size: 22px;
+   }
+
+   &__desc {
+      color: utils.$light-font-color;
+   }
+}

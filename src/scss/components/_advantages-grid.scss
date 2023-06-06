@@ -1,0 +1,19 @@
+@use "../utilities" as utils;
+
+.grid {
+   @include utils.grid-container($columns: repeat(4, 1fr), $gap: 50px);
+   padding: 50px 0;
+
+    &__title--advantages {
+         font-size: 26px;
+         font-weight: utils.$normal;
+    }
+
+   &__desc--advantages {
+      color: utils.$light-font-color;
+   }
+
+   &__child--advantages {
+      @include utils.flexbox($direction: column, $align: flex-start, $justify: flex-start, $gap: 25px);
+   }
+}
