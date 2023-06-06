@@ -1,0 +1,44 @@
+@use "../utilities" as utils;
+
+.section {
+
+   &--hero {
+      background-color: utils.$light-bg;
+      @include utils.flexbox();
+
+      & > div {
+         width: 50%;
+      }
+
+   }
+
+   &__content {
+
+      @include utils.flexbox($direction: column, $align: flex-start, $gap: 30px);
+      max-width: 500px;
+
+      & > h1 {
+         font-size: 40px;
+         font-weight: utils.$normal;
+      }
+
+      & > p {
+         color: utils.$light-font-color;
+      }
+
+      &__container {
+         @include utils.flexbox();
+         translate: 0 -40%;
+         padding: 0 100px;
+
+         @media (width < utils.$extra-large) {
+            translate: 0 0;
+         }
+      }
+   }
+
+   &-image__container {
+      position: relative;
+      overflow: hidden;
+   }
+}
