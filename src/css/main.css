@@ -27,6 +27,11 @@ select {
   font: inherit;
 }
 
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
 html {
   font-family: "Public Sans", sans-serif;
   font-size: 18px;
@@ -135,6 +140,22 @@ html {
   color: hsl(233, 8%, 62%);
 }
 
+.social-media {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.social-media__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4.5rem;
+  height: 100%;
+}
+
 .navbar {
   display: flex;
   flex-direction: row;
@@ -225,6 +246,41 @@ html {
 .section-image__container {
   position: relative;
   overflow: hidden;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0;
+  background-color: hsl(233, 26%, 24%);
+  padding: clamp(20px, 3%, 150px) clamp(20px, 10%, 300px);
+  color: hsl(0, 0%, 100%);
+}
+.footer__first {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 7.5rem;
+}
+.footer__last {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 2.5rem;
+}
+.footer__last > span {
+  color: hsl(233, 8%, 62%);
+}
+.footer__list {
+  list-style: none;
+  font-weight: 300;
+}
+.footer__list > li {
+  padding: 0.5rem 0;
 }
 
 /*# sourceMappingURL=main.css.map */

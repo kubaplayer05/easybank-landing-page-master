@@ -2,7 +2,7 @@
 
 .section {
 
-   background-color: utils.$light-bg;
+   background-color: utils.$very-light-bg;
 
    &--hero {
       @include utils.flexbox();
@@ -14,7 +14,7 @@
    }
 
    &--dark {
-      background-color: utils.$dark-bg;
+      background-color: utils.$light-bg;
    }
 
    &__title {

@@ -1,0 +1,29 @@
+@use "../utilities" as utils;
+
+.footer {
+   @include utils.flexbox($justify: space-between);
+   background-color: utils.$dark-bg;
+   padding: clamp(20px, 3%, 150px) clamp(20px, 10%, 300px);
+   color: utils.$white;
+
+   &__first {
+      @include utils.flexbox($gap: 7.5rem);
+   }
+
+   &__last {
+      @include utils.flexbox($direction: column, $align: flex-end, $gap: 2.5rem);
+
+      & > span {
+         color: utils.$light-font-color;
+      }
+   }
+
+   &__list {
+      list-style: none;
+      font-weight: utils.$light;
+
+      & > li {
+         padding: 0.5rem 0;
+      }
+   }
+}
