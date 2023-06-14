@@ -7,4 +7,12 @@
       @include utils.flexbox($direction: column, $gap: 4.5rem);
       height: 100%;
    }
+
+   & svg > path {
+      transition: fill 0.3s ease-out;
+   }
+
+   & > a:hover svg > path  {
+      fill: utils.$primary-blue;
+   }
 }

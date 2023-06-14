@@ -163,6 +163,12 @@ html {
   gap: 4.5rem;
   height: 100%;
 }
+.social-media svg > path {
+  transition: fill 0.3s ease-out;
+}
+.social-media > a:hover svg > path {
+  fill: hsl(192, 70%, 51%);
+}
 
 .navbar {
   display: flex;
