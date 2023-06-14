@@ -6,12 +6,12 @@
    color: utils.$white;
    padding: 15px 35px;
    font-weight: utils.$bold;
+   @include utils.background-gradient;
 
    &:hover {
       cursor: pointer;
+      @include utils.light-background-gradient;
    }
-
-   @include utils.background-gradient;
 
    @media (width <= utils.$medium) {
       &--desktop {

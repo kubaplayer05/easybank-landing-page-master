@@ -51,6 +51,7 @@ html {
 }
 .button:hover {
   cursor: pointer;
+  background: linear-gradient(90deg, hsl(136, 65%, 70%) 0%, hsl(192, 70%, 70%) 100%);
 }
 @media (width <= 768px) {
   .button--desktop {
