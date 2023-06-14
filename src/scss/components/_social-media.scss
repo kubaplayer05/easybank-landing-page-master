@@ -15,4 +15,11 @@
    & > a:hover svg > path  {
       fill: utils.$primary-blue;
    }
+
+   @media(width < utils.$medium) {
+      &__container {
+         gap: 2rem;
+         padding-bottom: 1rem;
+      }
+   }
 }

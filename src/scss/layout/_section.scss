@@ -11,6 +11,14 @@
          width: 50%;
       }
 
+      @media(width < utils.$medium) {
+         @include utils.flexbox($direction: column-reverse, $align: center);
+
+         & > div {
+            width: 100%;
+         }
+      }
+
    }
 
    &--dark {
@@ -25,6 +33,13 @@
    &__desc {
       color: utils.$light-font-color;
       max-width: 600px;
+   }
+
+   @media(width < utils.$medium) {
+      &__title, &__desc {
+         text-align: center;
+         margin: 0 auto;
+      }
    }
 
 
@@ -54,6 +69,21 @@
 
          @media (width < utils.$extra-large) {
             translate: 0 0;
+         }
+      }
+
+      @media(width < utils.$medium) {
+         align-items: center;
+         text-align: center;
+
+         &__container--hero {
+            margin-bottom: 3rem;
+         }
+      }
+
+      @media(width < utils.$small) {
+         &__container--hero {
+            padding: 0 50px;
          }
       }
    }

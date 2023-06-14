@@ -4,10 +4,10 @@
    @include utils.grid-container($columns: repeat(4, 1fr), $gap: 50px);
    padding: 50px 0;
 
-    &__title--advantages {
-         font-size: 26px;
-         font-weight: utils.$normal;
-    }
+   &__title--advantages {
+      font-size: 26px;
+      font-weight: utils.$normal;
+   }
 
    &__desc--advantages {
       color: utils.$light-font-color;
@@ -15,5 +15,14 @@
 
    &__child--advantages {
       @include utils.flexbox($direction: column, $align: flex-start, $justify: flex-start, $gap: 25px);
+   }
+
+   @media(width < utils.$medium) {
+      @include utils.grid-container($columns: repeat(1, 1fr), $gap: 50px);
+
+       &__child--advantages {
+          align-items: center;
+          text-align: center;
+       }
    }
 }

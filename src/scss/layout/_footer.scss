@@ -34,4 +34,27 @@
          }
       }
    }
+
+   @media(width < utils.$medium) {
+      flex-direction: column;
+      padding: clamp(60px, 3%, 150px) clamp(20px, 10%, 300px);
+
+      &__first {
+         flex-direction: column;
+         align-items: center;
+         gap: 1px;
+      }
+
+      &__list {
+         text-align: center;
+         padding: 0;
+         margin: 0;
+      }
+
+      &__last {
+         gap: 2rem;
+         align-items: center;
+         padding-top: 1rem;
+      }
+   }
 }
