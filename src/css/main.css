@@ -137,6 +137,13 @@ html {
   font-weight: 400;
   font-size: 22px;
 }
+.article__title > a {
+  transition: color 0.3s ease-out;
+  display: block;
+}
+.article__title > a:hover {
+  color: hsl(192, 70%, 51%);
+}
 .article__desc {
   color: hsl(233, 8%, 62%);
 }

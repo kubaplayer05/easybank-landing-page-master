@@ -20,6 +20,15 @@
    &__title {
       font-weight: utils.$normal;
       font-size: 22px;
+
+      & > a {
+         transition: color 0.3s ease-out;
+         display: block;
+
+         &:hover {
+            color: utils.$primary-blue;
+         }
+      }
    }
 
    &__desc {
