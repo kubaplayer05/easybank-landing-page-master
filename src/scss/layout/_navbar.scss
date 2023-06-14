@@ -3,7 +3,7 @@
 .navbar {
    @include utils.flexbox($justify: space-between);
 
-   width: clamp(400px, 85%, 1600px);
+   width: clamp(350px, 85%, 1600px);
    margin: 0 auto;
    padding: 25px 0;
    z-index: 10;
