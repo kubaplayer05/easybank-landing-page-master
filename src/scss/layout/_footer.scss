@@ -25,5 +25,13 @@
       & > li {
          padding: 0.5rem 0;
       }
+
+      & a {
+         transition: color 0.3s ease-out;
+
+         &:hover {
+            color: utils.$primary-blue;
+         }
+      }
    }
 }

@@ -309,5 +309,11 @@ html {
 .footer__list > li {
   padding: 0.5rem 0;
 }
+.footer__list a {
+  transition: color 0.3s ease-out;
+}
+.footer__list a:hover {
+  color: hsl(192, 70%, 51%);
+}
 
 /*# sourceMappingURL=main.css.map */
